@@ -1,10 +1,9 @@
 # Assignment 1: Insertion Sort (Monotonically Decreasing Order)
+#updating for third commit of the file
 
 def insertion_sort_desc(arr):
     """
     Performs insertion sort on the input list in decreasing order.
-    :param arr: list of numbers to sort
-    :return: sorted list (in-place)
     """
     for i in range(1, len(arr)):
         key = arr[i]
