@@ -1,4 +1,3 @@
-# Course: MSCS532
 # Assignment 1: Insertion Sort (Monotonically Decreasing Order)
 
 def insertion_sort_desc(arr):
@@ -23,7 +22,7 @@ def insertion_sort_desc(arr):
 
 if __name__ == "__main__":
     # Example usage
-    num = [2, 5, 0, 3, 9]
+    num = [12,15, 20, 3, 19]
     print("Original array:", num)
     insertion_sort_desc(num)
     print("Sorted array (decreasing order):", num)
