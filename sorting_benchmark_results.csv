@@ -1,0 +1,7 @@
+Dataset,Algorithm,Execution Time (ms),Memory Usage (KB)
+Sorted,Quick Sort,43.925,227.0
+Sorted,Merge Sort,39.484,164.41
+Reverse,Quick Sort,41.429,224.68
+Reverse,Merge Sort,42.553,164.41
+Random,Quick Sort,63.852,428.97
+Random,Merge Sort,48.694,167.12
