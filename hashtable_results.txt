@@ -1,0 +1,3 @@
+Inserted 50000 items in 0.2831s
+avg search time 2.02µs
+avg delete time 2.47µs
