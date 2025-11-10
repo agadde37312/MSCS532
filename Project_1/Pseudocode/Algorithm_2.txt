@@ -1,0 +1,15 @@
+Input: user_graph, product_graph, user_product_map
+Output: weighted_recommendation_graph
+
+Procedure Build_Recommendation_Graph():
+    Initialize graph weighted_recommendation_graph
+
+    For each user in user_graph:
+        For each product in user_product_map[user]:
+            For each neighbor_user connected to product:
+                If neighbor_user != user:
+                    weighted_recommendation_graph.add_edge(user, neighbor_user)
+                    weighted_recommendation_graph[user][neighbor_user].weight += 1
+
+    Normalize edge weights in weighted_recommendation_graph
+    Return weighted_recommendation_graph

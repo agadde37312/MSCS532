@@ -1,0 +1,20 @@
+Input: user_data[], product_data[], purchase_history[]
+Output: user_graph, product_graph, user_product_map
+
+Procedure Load_Data():
+    Initialize hash_table user_product_map
+    Initialize graph user_graph
+    Initialize graph product_graph
+
+    For each user in user_data:
+        user_graph.add_node(user)
+
+    For each product in product_data:
+        product_graph.add_node(product)
+
+    For each (user, product) in purchase_history:
+        user_graph.add_edge(user, product)
+        product_graph.add_edge(product, user)
+        user_product_map[user].append(product)
+
+    Return user_graph, product_graph, user_product_map

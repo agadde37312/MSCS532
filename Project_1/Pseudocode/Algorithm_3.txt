@@ -1,0 +1,17 @@
+Input: target_user, weighted_recommendation_graph, user_product_map
+Output: recommended_products[]
+
+Procedure Recommend(target_user):
+    Initialize list candidate_products
+    Initialize priority_queue recommendations
+
+    For each neighbor_user connected to target_user in weighted_recommendation_graph:
+        weight ← weighted_recommendation_graph[target_user][neighbor_user].weight
+        For each product in user_product_map[neighbor_user]:
+            If product NOT IN user_product_map[target_user]:
+                candidate_products[product] += weight
+
+    For each product, score in candidate_products:
+        recommendations.push(product, score)
+
+    Return top_k(recommendations, k=5)
