@@ -1,0 +1,6 @@
+# Core packages
+numpy==1.26.0
+matplotlib==3.8.1
+
+# Optional for testing
+pytest==8.2.2
